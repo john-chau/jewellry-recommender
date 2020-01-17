@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mejuri | Recommender</title>
+        <style>
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: transparent;
+          display:inline;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 16px;
+          text-decoration: none;
+          font-family: Arial;
+        }
+
+        li a:hover {
+          background-color: transparent;
+        }
+        </style>
+    </head>
+    <body>
+            <div class="navigation">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="https://mejuri.com/shop/t/type">SHOP ALL</a></li>
+                </ul>
+            </div>
+            <a href ="/" style="text-decoration: none; color: black"><h1 style="font-family:Arial; font-size: 2.35vw; display: inline; padding-left: 16.3045%" >M E J U R I &nbsp R E C O M M E N D E R</h1></a>
+            <h2 style="display:flex; flex-direction: row; content: ''; flex: 1 1; margin-top: 20px; margin-bottom: 20px; border-bottom: 1px solid #eaeaea"></h2>
+            <p style="font-family: Arial; font-size: 1.1vw; padding-left: 115px; padding-top: 30px; padding-bottom: 30px">Select an image of a piece of jewelry and press submit.
+                We'll recommend and provide information about 3 similar products from Mejuri. </p>
+            <form method="POST" enctype=multipart/form-data style="padding-left: 115px; font-family: Arial">
+                <p style="font-family: Arial; font-size: 14px; display: inline">Select image to upload:</p>
+                <input type="file" name="file">
+                <input type="submit" value="Upload" name="submit">
+            </form>
+    </body>
+</html>
+

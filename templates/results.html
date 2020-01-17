@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mejuri | Recommender Results</title>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            .product {
+              float: left;
+              width: 33.33%;
+              padding: 15px;
+              font-family: Arial;
+            }
+
+            .product_grid{
+              padding-left: 115px;
+              padding-right: 115px;
+            }
+            /* Clearfix (clear floats) */
+            .product_grid::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: transparent;
+                display:inline;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+            }
+
+            li {
+              float: left;
+            }
+
+            li a {
+              display: block;
+              color: black;
+              text-align: center;
+              padding: 16px;
+              text-decoration: none;
+              font-family: Arial;
+            }
+
+            li a:hover {
+              background-color: transparent;
+            }
+
+            h2 {
+                display:flex;
+                flex-direction: row;
+            }
+
+            h2:before {
+                content: '';
+                flex: 1 1;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 131px;
+                margin-right: 40px;
+                border-bottom: 1px solid #eaeaea;
+            }
+
+            h2:after {
+                content: '';
+                flex: 1 1;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 40px;
+                margin-right: 131px;
+                border-bottom: 1px solid #eaeaea;
+                padding-left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <div class="navigation">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="https://mejuri.com/shop/t/type">SHOP ALL</a></li>
+                </ul>
+            </div>
+            <a href ="/" style="text-decoration: none; color: black"><h1 style="font-family:Arial; font-size: 2.35vw; display: inline; padding-left: 16.3045%" >M E J U R I &nbsp R E C O M M E N D E R</h1></a>
+            <h3 style="display:flex; flex-direction: row; content: ''; flex: 1 1; margin-top: 20px; border-bottom: 1px solid #eaeaea"></h3>
+        </div>
+        <div class="Recommendations">
+            <h2 style="text-transform:uppercase; letter-spacing: 0.1em; font-family: Arial; padding-bottom: 30px; padding-top: 30px; text-align: center; font-size: 18px">Recommendations</h2>
+        </div>
+        <div class="product_grid">
+            <div class="product">
+                <div class="product_1" align="center">
+                    <a href={{ product_link1 }}><img src= {{ similar1 }}, style="background-color: rgb(250,250,250); width:100%"></a>
+                    <p><b>Collection</b>: {{ label1 }} </p>
+                    <p><b>Product Name</b>: {{ product1 }}</p>
+                    <p><b>Material</b>: {{ material1 }}</p>
+                    <p><b>Price</b>: ${{ price1 }}</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product_2" align="center">
+                    <a href={{ product_link2 }}><img src= {{ similar2 }}, style="background-color: rgb(250,250,250); width:100%"></a>
+                    <p><b>Collection</b>: {{ label2 }} </p>
+                    <p><b>Product Name</b>: {{ product2 }}</p>
+                    <p><b>Material</b>: {{ material2 }}</p>
+                    <p><b>Price</b>: ${{ price2 }}</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product_3" align="center">
+                    <a href={{ product_link3 }}> <img src= {{ similar3 }}, style="background-color: rgb(250,250,250); width:100%"> </a>
+                    <p><b>Collection</b>: {{ label3 }} </p>
+                    <p><b>Product Name</b>: {{ product3 }}</p>
+                    <p><b>Material</b>: {{ material3 }}</p>
+                    <p><b>Price</b>: ${{ price3 }}</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
